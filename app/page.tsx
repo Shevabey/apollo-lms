@@ -1,17 +1,20 @@
-import Navigation from "@/components/layout/Navigation";
-import Hero from "@/components/Hero";
-import Features from "@/components/Features";
-import Pricing from "@/components/Pricing";
-import Footer from "@/components/Footer";
+// import Navigation from "@/components/layout/Navigation";
+
+// export default function Home() {
+//   return (
+//     <div className="min-h-screen">
+//       <Navigation />
+//       {/* <Hero />
+//       <Features />
+//       <Pricing />
+//       <Footer /> */}
+//     </div>
+//   );
+// }
+
+import { redirect } from 'next/navigation';
 
 export default function Home() {
-  return (
-    <div className="min-h-screen">
-      <Navigation />
-      {/* <Hero />
-      <Features />
-      <Pricing />
-      <Footer /> */}
-    </div>
-  );
+  // Since you don't need landing page, redirect to dashboard
+  redirect('/home');
 }
